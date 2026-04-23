@@ -1,0 +1,29 @@
+name: reproductorhistorico
+description: "Reproductor avanzado de audio con Supabase en Flutter."
+publish_to: 'none'
+version: 0.1.0
+
+environment:
+  sdk: ^3.9.2
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.9
+  supabase_flutter: ^2.12.4
+  just_audio: ^0.9.46
+  just_audio_windows: ^0.2.2
+  audio_metadata_reader: ^1.4.2
+  path_provider: ^2.1.5
+  http: ^1.6.0
+  flutter_dotenv: ^5.2.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - .env
