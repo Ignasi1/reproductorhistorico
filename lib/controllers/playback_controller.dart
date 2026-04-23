@@ -271,7 +271,13 @@ class PlaybackController extends ChangeNotifier {
       if (_state.isRepeatOne) {
         await _player.seek(Duration.zero);
         await _player.play();
-        _setState(_state.copyWith(position: Duration.zero, isPlaying: true));
+        _setState(
+          _state.copyWith(
+            position: Duration.zero,
+            isPlaying: true,
+            isRepeatOne: false,
+          ),
+        );
         return;
       }
 
